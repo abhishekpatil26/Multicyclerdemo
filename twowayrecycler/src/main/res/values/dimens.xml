@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="row_left_margin">16dp</dimen>
+    <dimen name="row_header_textsize">17dp</dimen>
+    <dimen name="row_see_all_text_size">15sp</dimen>
+    <dimen name="recyclerview_top_margin">9dp</dimen>
+
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="image_size_height_110dp">110dp</dimen>
+    <dimen name="card_width">115dp</dimen>
+    <dimen name="card_height">155dp</dimen>
+    <dimen name="card_radius">3dp</dimen>
+    <dimen name="card_elevation">1dp</dimen>
+    <dimen name="content_image_width">115dp</dimen>
+    <dimen name="content_image_height">115dp</dimen>
+    <dimen name="play_btn_width">22dp</dimen>
+    <dimen name="play_btn_height">22dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="content_menu_icon_width">20dp</dimen>
+    <dimen name="content_menu_icon_height">30dp</dimen>
+
+    <dimen name="content_title_textsize">11dp</dimen>
+    <dimen name="content_subtitle_textsize">9dp</dimen>
+    <dimen name="card_margin_right">7dp</dimen>
+    <dimen name="card_metadata_layout_height">40dp</dimen>
+    <dimen name="language_text_size">11dp</dimen>
+    <dimen name="add_language_icon_height">29dp</dimen>
+    <dimen name="add_language_icon_width">@dimen/add_language_icon_height</dimen>
+    <dimen name="language_cell_right_margin">4dp</dimen>
+    <dimen name="collection_image_width">126dp</dimen>
+    <dimen name="collection_image_height">@dimen/collection_image_width</dimen>
+
+</resources>

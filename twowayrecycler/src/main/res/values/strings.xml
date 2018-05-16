@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TwoWayRecycler</string>
+
+    <string name="row_header">Row header</string>
+    <string name="see_all"><![CDATA[See all >]]></string>
+    <string name="title">title</string>
+    <string name="sub_title">subtitle</string>
+
+</resources>

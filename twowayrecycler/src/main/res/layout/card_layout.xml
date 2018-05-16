@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/card_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/card_margin_right"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_content_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_content_image"
+                    android:layout_width="@dimen/content_image_width"
+                    android:layout_height="@dimen/content_image_height"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    tools:src="@tools:sample/backgrounds/scenic"/>
+
+                <ImageView
+                    android:id="@+id/iv_play_btn"
+                    android:layout_width="@dimen/play_btn_width"
+                    android:layout_height="@dimen/play_btn_height"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_play_black"/>
+
+                <ImageView
+                    android:id="@+id/iv_radio_icon"
+                    android:layout_width="@dimen/play_btn_width"
+                    android:layout_height="@dimen/play_btn_height"
+                    android:padding="2dp"
+                    app:srcCompat="@drawable/ic_radio_white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_content_metadata_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingBottom="4dp"
+                android:layout_below="@id/rl_content_image_layout">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/iv_content_menu"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    tools:text="@sample/mock_content.json/songs/title"
+                    android:textSize="@dimen/content_title_textsize"
+                    android:textColor="@color/primary_text_color"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_content_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tv_content_title"
+                    android:layout_toStartOf="@+id/iv_content_menu"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    tools:text="@sample/mock_content.json/songs/subtitle"
+                    android:textSize="@dimen/content_subtitle_textsize"
+                    android:textColor="@color/secondary_text_color"/>
+
+                <ImageView
+                    android:id="@+id/iv_content_menu"
+                    android:layout_width="@dimen/content_menu_icon_width"
+                    android:layout_height="@dimen/content_menu_icon_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_ellipsis_grey" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

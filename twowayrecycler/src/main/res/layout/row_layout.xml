@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/row_left_margin"
+    android:layout_marginTop="@dimen/row_left_margin">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_row_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tv_see_all"
+        android:singleLine="true"
+        android:textSize="@dimen/row_header_textsize"
+        android:textColor="@color/row_header_text_color"
+        tools:text="@string/row_header" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:focusable="auto"
+        android:text="@string/see_all"
+        android:textSize="@dimen/row_see_all_text_size" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cell_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_row_header"
+        android:layout_marginTop="@dimen/recyclerview_top_margin"
+        android:orientation="horizontal"
+        tools:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/card_layout"
+        />
+
+</RelativeLayout>
